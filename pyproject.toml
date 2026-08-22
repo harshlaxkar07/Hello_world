@@ -1,0 +1,20 @@
+[project]
+name = "hello-world"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "harsh.laxkar@choicetechlab.com", email = "iamharshlaxkar@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "buildozer>=1.6.0",
+    "kivy[base]>=2.3.1",
+]
+
+[project.scripts]
+hello-world = "hello_world:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
